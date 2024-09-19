@@ -3,3 +3,5 @@ venv/
 known_faces/.DS_Store
 known_faces/danielle/.DS_Store
 /venv
+*.pyc
+/venv/lib
