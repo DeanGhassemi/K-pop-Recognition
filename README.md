@@ -17,5 +17,4 @@ I want to add more groups, incorporate scikit-learn to make it more precise, tur
 
 ## Demo Image
 
-How it looks currently
-
+![How it looks currently](https://github.com/DeanGhassemi/K-pop-Recognition/blob/main/demo-images/Screenshot%202024-09-19%20at%2010.02.25%E2%80%AFAM.png)
