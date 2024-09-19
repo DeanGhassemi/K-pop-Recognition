@@ -1,9 +1,9 @@
 # K-pop-Recognition
 
 ## Inspiration
-When I first got into K-pop, it was only for the music. Then I slowly transitioned into getting to know the members of the groups I liked the most. As someone who is new into K-pop, it is hard getting to know who is who when some groups have over 4 members. And even as someone who has been enjoying the music for over 5 years, I struggle to recognize the differences in groups with over 9 members. 
-WJSN had 10 members
-Iz*One had 12 members
+When I first got into K-pop, it was only for the music. Then I slowly transitioned into getting to know the members of the groups I liked the most. As someone who is new into K-pop, it is hard getting to know who is who when some groups have over 4 members. And even as someone who has been enjoying the music for over 5 years, I struggle to recognize the differences in groups with over 9 members.\
+WJSN had 10 members\
+Iz*One had 12 members\
 TripleS had 24 members!
 
 ## Starting Point
