@@ -3,14 +3,13 @@ import face_recognition # for recognizing faces
 import os # iterate dir
 import numpy as np
 
-
+# Constants
 KNOWN_FACES_DIR = "known_faces"
 UNKNOWN_FACES_DIR = "unknown_faces"
 TOLERANCE = 0.37
 FRAME_THICKNESS = 3
 FONT_THICKNESS = 2
-MODEL = 'cnn'
-PATH = '/Facial-Recognition'
+MODEL = 'hog'
 
 
 known_faces = []
@@ -31,6 +30,8 @@ def label_faces(image, known_faces, known_names):
     locations = face_recognition.face_locations(image, model=MODEL)
     encodings = face_recognition.face_encodings(image, locations)
     image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR) 
+
+    # Prevent Duplicate Recognition
     used_names = set()
     for face_encoding, face_location in zip(encodings, locations):
         results = face_recognition.compare_faces(known_faces, face_encoding, TOLERANCE)
@@ -47,7 +48,7 @@ def label_faces(image, known_faces, known_names):
                 cv2.rectangle(image, top_left, bottom_right, color, FRAME_THICKNESS)
                 top_left = (face_location[3], face_location[2])
                 bottom_right = (face_location[1], face_location[2]+22)
-                cv2.rectangle(image, top_left, bottom_right, color, cv2.FILLED) 
+                cv2.rectangle(image, top_left, bottom_right, color, cv2.FILLED)
 
                 # Text
                 cv2.putText(image, match, (face_location[3]+10, face_location[2]+15), cv2.FONT_HERSHEY_COMPLEX, 0.7, (255,0,255), FONT_THICKNESS)
