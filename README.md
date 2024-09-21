@@ -13,8 +13,10 @@ I have always been interested in facial recognition and had prior knowledge of p
 So far it is only working with [NewJeans](https://en.wikipedia.org/wiki/NewJeans). Before I add more groups, I want to make it more precise.
 
 ## Plans
-I want to add more groups, incorporate scikit-learn to make it more precise, turn it into a full developed web app so others can upload their own images and have those analyzed for recognition.  
+I want to add more groups, incorporate scikit-learn to make it more precise, turn it into a full developed web app so others can upload their own images and have those analyzed for recognition.
 
+## Technical Challenges
+I am attempting to find ways to optimize face-recognition without using extensive amount of training data. Sometimes, a app will recognize everyone as the same person. I made a hotfix where if a member has already been used to label a face, then that member cannot be used once again. The issue with this approach is that all faces do not get labelled. I am currently working on fixing that too. I'm thinking of comparing and switching based on which face encoding is more accurate. 
 ## Demo Image
 
 ![How it looks currently](https://github.com/DeanGhassemi/K-pop-Recognition/blob/main/demo-images/Screenshot%202024-09-19%20at%2010.02.25%E2%80%AFAM.png)
